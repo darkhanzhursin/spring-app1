@@ -12,7 +12,10 @@
   </bean>
 
   <bean id="musicBean2"
-        class="org.zhursin.springcourse.ClassicalMusic">
+        class="org.zhursin.springcourse.ClassicalMusic"
+        init-method="init"
+        destroy-method="destroy"
+        factory-method="getClassicalMusic">
   </bean>
 
   <bean id="musicPlayer"
