@@ -11,4 +11,9 @@
         class="org.zhursin.springcourse.RockMusic">
   </bean>
 
+  <bean id="musicPlayer"
+        class="org.zhursin.springcourse.MusicPlayer">
+    <constructor-arg ref="musicBean"/>
+  </bean>
+
 </beans>
